@@ -134,8 +134,6 @@ function playGame() {
     else {
         alert("Thanks for playing");
     }
-
-
 }
 
 playGame();
