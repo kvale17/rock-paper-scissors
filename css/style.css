@@ -16,3 +16,9 @@ h1 {
   font-style: italic;
   font-size: 3.5em;
 }
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
