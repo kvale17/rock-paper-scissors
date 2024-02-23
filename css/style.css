@@ -27,3 +27,9 @@ h1 {
     background-color: beige;
     cursor:pointer;
 }
+
+.scores{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
