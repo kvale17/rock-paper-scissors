@@ -41,3 +41,6 @@ h1 {
     flex-direction: column;
 }
 
+.score-header{
+    font-weight: bolder;
+}
