@@ -68,3 +68,8 @@ body {
 input{
   width: 30px;
 }
+
+#play{
+  border-radius: 30px;
+  color: blue;
+}
