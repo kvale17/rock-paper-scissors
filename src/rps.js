@@ -1,3 +1,8 @@
+const playBtn = document.querySelector('#play');
+
+playBtn.addEventListener('click', playGame);
+
+
 //Array is organized so next value is the one that beats it, making it easy to check who won
 const choices = ["rock", "paper", "scissors", "rock"];
 
