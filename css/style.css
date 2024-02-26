@@ -64,3 +64,7 @@ body {
   flex: auto;
   color: red;
 }
+
+input{
+  width: 30px;
+}
