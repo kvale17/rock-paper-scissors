@@ -17,34 +17,34 @@ h1 {
   font-size: 3.5em;
 }
 
-.options{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.options button{
-    background-color: beige;
-    cursor:pointer;
+.options button {
+  background-color: red;
+  cursor: pointer;
 }
 
-.scores{
-    display: flex;
-    justify-content: space-around;
-    font-size: 20px;
+.scores {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
 }
 
-.score-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.score-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.score-header{
-    font-weight: bolder;
+.score-header {
+  font-weight: bolder;
 }
 
-body{
-  background-color:bisque;
+body {
+  background-color: bisque;
 }
