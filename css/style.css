@@ -48,3 +48,17 @@ h1 {
 body {
   background-color: bisque;
 }
+
+.game-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.playing-field {
+  margin: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: auto;
+}
