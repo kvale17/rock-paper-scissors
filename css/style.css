@@ -44,3 +44,7 @@ h1 {
 .score-header{
     font-weight: bolder;
 }
+
+body{
+  background-color:bisque;
+}
