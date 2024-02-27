@@ -4,6 +4,8 @@ playBtn.addEventListener('click', playGame);
 
 const interactText = document.querySelector('.player-interact span');
 
+const results = document.getElementById('game-results');
+
 //Array is organized so next value is the one that beats it, making it easy to check who won
 const choices = ["rock", "paper", "scissors", "rock"];
 
@@ -130,19 +132,19 @@ async function playGame() {
 
             //Player lost so computer gets a point
             case 0:
-                console.log("The computer wins this round");
+                results.innerText = "The computer wins this round";
                 computerScore++;
                 break;
 
             //Player won so they get a point
             case 1:
-                console.log("You win this round");
+                results.innerText = "You win this round";
                 playerScore++;
                 break;
 
             //Tied so go to next round
             case 2:
-                console.log("This round is tied");
+                results.innerText = "This round is tied";
                 continue;
 
             //Could not determine round result
@@ -161,7 +163,7 @@ async function playGame() {
 
     replayButton.style.display = 'block';
 
-    replayButton.addEventListener('click', ()=> {
+    replayButton.addEventListener('click', () => {
         location.reload()
     });
 }
