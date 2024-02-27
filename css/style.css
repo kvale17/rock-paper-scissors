@@ -81,3 +81,8 @@ input {
   height: 40px;
   display: none;
 }
+
+#game-results {
+  font-weight: bold;
+  font-style: italic;
+}
