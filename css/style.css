@@ -65,11 +65,18 @@ body {
   color: red;
 }
 
-input{
+input {
   width: 30px;
 }
 
-#play{
+#play {
   border-radius: 30px;
   color: blue;
+}
+
+#replay-button {
+  background-color: aquamarine;
+  border-radius: 10px;
+  font-weight: bold;
+  height: 40px;
 }

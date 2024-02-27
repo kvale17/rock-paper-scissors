@@ -156,5 +156,11 @@ async function playGame() {
 
     //Calculate results
     gameOver(playerScore, computerScore);
+
+    const replayButton = document.getElementById('replay-button');
+
+    replayButton.addEventListener('click', ()=> {
+        location.reload()
+    });
 }
 
