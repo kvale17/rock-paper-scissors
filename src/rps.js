@@ -96,9 +96,6 @@ function getNumberOfRounds() {
 }
 
 async function playGame() {
-    document.getElementById("player-choice").src = "../img/human.png";
-    document.getElementById("computer-choice").src = "../img/computer.png";
-
     //Initialize scores to 0
     let playerScore = 0;
     let computerScore = 0;
