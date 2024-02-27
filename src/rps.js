@@ -9,7 +9,7 @@ const interactText = document.querySelector('.player-interact span');
 const choices = ["rock", "paper", "scissors", "rock"];
 
 function playRound(playerChoice, computerChoice) {
-    const computerChoiceIndex = choices.indexOf(playerChoice);
+    const computerChoiceIndex = choices.indexOf(computerChoice);
 
     // Return 0 if loss, 1 if won, 2 if tie
 
