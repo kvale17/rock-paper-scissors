@@ -107,6 +107,8 @@ async function playGame() {
 
     if (!rounds) return;
 
+    document.querySelector('.player-interact').style.display = 'none';  
+
     //Play x amount of rounds
     for (let i = 0; i < rounds; i++) {
         const computerSelection = getComputerChoice();
