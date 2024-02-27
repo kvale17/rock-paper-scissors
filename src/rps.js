@@ -143,13 +143,15 @@ async function playGame() {
             //Tied so go to next round
             case 2:
                 console.log("This round is tied");
-                break;
+                continue;
 
             //Could not determine round result
             default:
                 console.log("The game result value is unexpected");
                 continue;
         }
+        document.getElementById("player-score").innerText = playerScore;
+        document.getElementById("computer-score").innerText = computerScore;
     }
 
     //Calculate results
