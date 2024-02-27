@@ -69,18 +69,14 @@ async function getPlayerChoice() {
 }
 
 function gameOver(playerScore, computerScore) {
-    console.log("Your score:" + playerScore);
-
-    console.log("Computer score:" + computerScore);
-
     if (playerScore === computerScore) {
-        console.log("You tied! There is no winner!");
+        results.innerText = "You tied! There is no winner!";
     }
     else if (playerScore < computerScore) {
-        console.log("You lost to a computer!");
+        results.innerText = "You lost to a computer!";
     }
     else if (playerScore > computerScore) {
-        console.log("You won! Congratulations!");
+        results.innerText = "You won! Congratulations!";
     }
     else {
         console.log("Unable to determine winner");
