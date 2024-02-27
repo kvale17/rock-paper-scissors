@@ -159,6 +159,8 @@ async function playGame() {
 
     const replayButton = document.getElementById('replay-button');
 
+    replayButton.style.display = 'block';
+
     replayButton.addEventListener('click', ()=> {
         location.reload()
     });
