@@ -123,8 +123,8 @@ async function playGame() {
         //Get the result of the round
         const result = playRound(playerSelection, computerSelection);
 
-        document.getElementById("player-choice").src = "../img/" + playerSelection + ".png";
-        document.getElementById("computer-choice").src = "../img/" + computerSelection + ".png";
+        document.getElementById("player-choice").src = "./img/" + playerSelection + ".png";
+        document.getElementById("computer-choice").src = "./img/" + computerSelection + ".png";
 
         //Determine how the scores should change if at all
         switch (result) {
