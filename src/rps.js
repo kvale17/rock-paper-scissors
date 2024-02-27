@@ -109,6 +109,9 @@ async function playGame() {
 
     //Play x amount of rounds
     for (let i = 0; i < rounds; i++) {
+
+        if (i === 0) results.innerText = "Make your first move";
+
         const computerSelection = getComputerChoice();
         const playerSelection = await getPlayerChoice();
 
