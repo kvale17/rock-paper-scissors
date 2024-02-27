@@ -154,7 +154,7 @@ async function playGame() {
     gameOver(playerScore, computerScore);
 
     if (window.confirm("Do you want to play again?")) {
-        playGame();
+        location.reload();
     }
     else {
         alert("Thanks for playing");
