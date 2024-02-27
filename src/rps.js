@@ -4,7 +4,6 @@ playBtn.addEventListener('click', playGame);
 
 const interactText = document.querySelector('.player-interact span');
 
-
 //Array is organized so next value is the one that beats it, making it easy to check who won
 const choices = ["rock", "paper", "scissors", "rock"];
 
@@ -117,6 +116,9 @@ async function playGame() {
 
         //Get the result of the round
         const result = playRound(playerSelection, computerSelection);
+
+        document.getElementById("player-choice").src = "../img/" + playerSelection + ".png";
+        document.getElementById("computer-choice").src = "../img/" + computerSelection + ".png";
 
         //Determine how the scores should change if at all
         switch (result) {
