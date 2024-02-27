@@ -154,12 +154,5 @@ async function playGame() {
 
     //Calculate results
     gameOver(playerScore, computerScore);
-
-    if (window.confirm("Do you want to play again?")) {
-        location.reload();
-    }
-    else {
-        alert("Thanks for playing");
-    }
 }
 
