@@ -2,6 +2,8 @@ const playBtn = document.querySelector('#play');
 
 playBtn.addEventListener('click', playGame);
 
+const interactText = document.querySelector('.player-interact span');
+
 
 //Array is organized so next value is the one that beats it, making it easy to check who won
 const choices = ["rock", "paper", "scissors", "rock"];
@@ -69,13 +71,13 @@ function gameOver(playerScore, computerScore) {
     }
 }
 
-function askForNumberOfRounds() {
-    let rounds = prompt("How many games do you want to play");
+function getNumberOfRounds() {
+    let rounds = document.getElementById("rounds-ammount").value;
 
     //If rounds input is negative, 0, or not a number, ask player to enter a positive number value
     if (rounds <= 0 || isNaN(rounds)) {
-        console.log("You must choose a positive number");
-        return askForNumberOfRounds();
+        alert("You must choose a positive number");
+        return;
     }
     else {
         return rounds;
@@ -87,8 +89,9 @@ function playGame() {
     let playerScore = 0;
     let computerScore = 0;
 
-    //Ask player how many rounds to play and store value
-    const rounds = askForNumberOfRounds();
+    const rounds = getNumberOfRounds();
+
+    if (!rounds) return;
 
     //Play x amount of rounds
     for (let i = 0; i < rounds; i++) {
