@@ -107,7 +107,7 @@ async function playGame() {
 
     if (!rounds) return;
 
-    document.querySelector('.player-interact').style.display = 'none';  
+    document.querySelector('.player-interact').style.display = 'none';
 
     //Play x amount of rounds
     for (let i = 0; i < rounds; i++) {
@@ -132,18 +132,18 @@ async function playGame() {
             case 0:
                 console.log("The computer wins this round");
                 computerScore++;
-                continue;
+                break;
 
             //Player won so they get a point
             case 1:
                 console.log("You win this round");
                 playerScore++;
-                continue;
+                break;
 
             //Tied so go to next round
             case 2:
                 console.log("This round is tied");
-                continue;
+                break;
 
             //Could not determine round result
             default:
