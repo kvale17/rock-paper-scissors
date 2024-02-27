@@ -79,4 +79,5 @@ input {
   border-radius: 10px;
   font-weight: bold;
   height: 40px;
+  display: none;
 }
