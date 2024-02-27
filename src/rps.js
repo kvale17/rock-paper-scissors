@@ -37,19 +37,31 @@ function getComputerChoice() {
     return computerChoice;
 }
 
-function getPlayerChoice() {
+async function getPlayerChoice() {
+    let rockButton = document.getElementById("rock");
+    let paperButton = document.getElementById("paper");
+    let scissorsButton = document.getElementById("scissors");
 
-    //Ask for player choice and return lower case value so input is not case sensitive and for consistency
-    let playerSelection = prompt("Enter you choice of rock/paper/scissors").toLocaleLowerCase();
+    let playerSelection = "";
 
-    //If choice is not valid ask again
-    if (!(choices.includes(playerSelection))) {
-        console.log("You must enter a valid choice");
-        return getPlayerChoice();
-    }
-    else {
-        return playerSelection;
-    }
+    const promise = new Promise((resolve) => {
+        rockButton.addEventListener('click', () => {
+            playerSelection = "rock";
+            resolve();
+        });
+        paperButton.addEventListener('click', () => {
+            playerSelection = "paper";
+            resolve();
+        });
+        scissorsButton.addEventListener('click', () => {
+            playerSelection = "scissors";
+            resolve();
+        });
+    });
+
+    await promise;
+
+    return playerSelection;
 }
 
 function gameOver(playerScore, computerScore) {
@@ -84,7 +96,7 @@ function getNumberOfRounds() {
     }
 }
 
-function playGame() {
+async function playGame() {
     //Initialize scores to 0
     let playerScore = 0;
     let computerScore = 0;
@@ -96,7 +108,7 @@ function playGame() {
     //Play x amount of rounds
     for (let i = 0; i < rounds; i++) {
         const computerSelection = getComputerChoice();
-        const playerSelection = getPlayerChoice();
+        const playerSelection = await getPlayerChoice();
 
         //Display what each side chose
         console.log("Computer chose:" + computerSelection);
